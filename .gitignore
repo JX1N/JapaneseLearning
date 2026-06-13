@@ -1,0 +1,5 @@
+node_modules
+dist
+.superpowers
+temp_jlpt_data
+temp_anchor_jlpt

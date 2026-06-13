@@ -1,0 +1,114 @@
+<h2>首页仪表盘 — 你喜欢哪种布局？</h2>
+<p class="subtitle">这是打开 App 的第一屏，需要展示今天的学习进度和快速入口。以下为手机端视图。</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">方案 A — 任务清单型</div>
+        <div class="mockup-body">
+          <div style="padding:12px;text-align:center;border-bottom:1px solid #e5e7eb;font-weight:700;font-size:14px">📚 今日学习</div>
+          <div style="display:flex;justify-content:space-around;padding:12px;text-align:center">
+            <div><div style="font-size:24px;font-weight:700;color:#e63946">12</div><div style="font-size:11px">待复习</div></div>
+            <div><div style="font-size:24px;font-weight:700;color:#2a9d8f">5</div><div style="font-size:11px">新单词</div></div>
+            <div><div style="font-size:24px;font-weight:700;color:#457b9d">3</div><div style="font-size:11px">语法课</div></div>
+          </div>
+          <div style="margin:8px;padding:10px;background:#f0f9ff;border-radius:8px;border-left:3px solid #3b82f6">
+            <div style="font-size:12px;font-weight:600;color:#1e40af">🔥 单词复习</div>
+            <div style="font-size:11px;color:#64748b">12 个单词到期 · 预计 8 分钟</div>
+          </div>
+          <div style="margin:8px;padding:10px;background:#fef3c7;border-radius:8px;border-left:3px solid #f59e0b">
+            <div style="font-size:12px;font-weight:600;color:#92400e">🆕 新单词</div>
+            <div style="font-size:11px;color:#64748b">今日可学 5 个新单词</div>
+          </div>
+          <div style="margin:8px;padding:10px;background:#f0fdf4;border-radius:8px;border-left:3px solid #22c55e">
+            <div style="font-size:12px;font-weight:600;color:#166534">📖 语法学习</div>
+            <div style="font-size:11px;color:#64748b">继续 N5 · 第 3 课</div>
+          </div>
+          <div style="text-align:center;padding:8px"><button class="mock-button">开始学习 →</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body"><h3>任务清单型</h3><p>清晰的待办列表，按类型分组。知道今天"要做什么"。</p></div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">方案 B — 模块入口型</div>
+        <div class="mockup-body">
+          <div style="padding:16px;text-align:center">
+            <div style="font-size:12px;color:#64748b">こんにちは 👋</div>
+            <div style="font-size:18px;font-weight:700;margin:4px 0">今日学習しましょう</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:8px">
+            <div style="background:#eff6ff;border-radius:12px;padding:16px;text-align:center">
+              <div style="font-size:28px">🔤</div>
+              <div style="font-weight:700;font-size:14px;margin:4px 0">五十音</div>
+              <div style="font-size:10px;color:#64748b">掌握度 78%</div>
+            </div>
+            <div style="background:#fef2f2;border-radius:12px;padding:16px;text-align:center">
+              <div style="font-size:28px">📝</div>
+              <div style="font-weight:700;font-size:14px;margin:4px 0">单词</div>
+              <div style="font-size:10px;color:#64748b">12 个待复习</div>
+            </div>
+            <div style="background:#f0fdf4;border-radius:12px;padding:16px;text-align:center">
+              <div style="font-size:28px">📖</div>
+              <div style="font-weight:700;font-size:14px;margin:4px 0">语法</div>
+              <div style="font-size:10px;color:#64748b">N5 · 进行中</div>
+            </div>
+            <div style="background:#fefce8;border-radius:12px;padding:16px;text-align:center">
+              <div style="font-size:28px">🎧</div>
+              <div style="font-weight:700;font-size:14px;margin:4px 0">听力</div>
+              <div style="font-size:10px;color:#64748b">3 首新音频</div>
+            </div>
+          </div>
+          <div style="margin:8px;padding:10px;background:#f1f5f9;border-radius:8px;text-align:center">
+            <div style="font-size:11px;color:#64748b">🔥 连续学习 7 天</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body"><h3>模块入口型</h3><p>四大模块卡片一目了然，点击即进入。强调模块导航，适合有明确学习方向的场景。</p></div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">方案 C — 混合型（推荐）</div>
+        <div class="mockup-body">
+          <div style="padding:14px">
+            <div style="font-size:12px;color:#64748b">おはようございます</div>
+            <div style="font-size:20px;font-weight:700">今日の目標</div>
+          </div>
+          <div style="margin:0 10px;padding:14px;background:linear-gradient(135deg,#1e3a5f,#2563eb);border-radius:14px;color:white;text-align:center">
+            <div style="font-size:28px;font-weight:700">🔥 12</div>
+            <div style="font-size:12px;opacity:0.8">个单词等你复习</div>
+            <div style="margin-top:8px"><button style="background:white;color:#2563eb;border:none;padding:6px 20px;border-radius:20px;font-weight:600;font-size:13px">开始复习</button></div>
+          </div>
+          <div style="display:flex;justify-content:space-around;padding:12px 0">
+            <div style="text-align:center"><div style="font-size:16px;font-weight:700">+5</div><div style="font-size:10px;color:#64748b">新词</div></div>
+            <div style="text-align:center"><div style="font-size:16px;font-weight:700">78%</div><div style="font-size:10px;color:#64748b">假名</div></div>
+            <div style="text-align:center"><div style="font-size:16px;font-weight:700">N5</div><div style="font-size:10px;color:#64748b">语法</div></div>
+            <div style="text-align:center"><div style="font-size:16px;font-weight:700">7天</div><div style="font-size:10px;color:#64748b">连续</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:4px 10px">
+            <div style="border:1px solid #e5e7eb;border-radius:10px;padding:12px;display:flex;align-items:center;gap:8px">
+              <span style="font-size:20px">🔤</span><div><div style="font-size:12px;font-weight:600">五十音</div><div style="font-size:10px;color:#64748b">继续练习</div></div>
+            </div>
+            <div style="border:1px solid #e5e7eb;border-radius:10px;padding:12px;display:flex;align-items:center;gap:8px">
+              <span style="font-size:20px">📖</span><div><div style="font-size:12px;font-weight:600">语法</div><div style="font-size:10px;color:#64748b">て形用法</div></div>
+            </div>
+            <div style="border:1px solid #e5e7eb;border-radius:10px;padding:12px;display:flex;align-items:center;gap:8px">
+              <span style="font-size:20px">🎧</span><div><div style="font-size:12px;font-weight:600">听力</div><div style="font-size:10px;color:#64748b">初级对话</div></div>
+            </div>
+            <div style="border:1px solid #e5e7eb;border-radius:10px;padding:12px;display:flex;align-items:center;gap:8px">
+              <span style="font-size:20px">⚙️</span><div><div style="font-size:12px;font-weight:600">设置</div><div style="font-size:10px;color:#64748b">同步 & 更多</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body"><h3>混合型（推荐）</h3><p>顶部突出今日核心任务（单词复习），中部统计概览，底部模块入口。重点突出 + 导航方便。</p></div>
+  </div>
+</div>
