@@ -51,6 +51,6 @@ export function isDue(srsDue: number, now: number = Date.now()): boolean {
   return srsDue <= now
 }
 
-export function getDueWords(words: Array<{ srsDue: number }>, now: number = Date.now()): typeof words {
+export function getDueWords<T extends { srsDue: number }>(words: T[], now: number = Date.now()): T[] {
   return words.filter(w => isDue(w.srsDue, now))
 }

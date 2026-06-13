@@ -26,7 +26,6 @@ async function gistHeaders(): Promise<HeadersInit> {
 }
 
 export async function createSyncGist(): Promise<string> {
-  const cfg = getConfig()
   const res = await fetch(GIST_API, {
     method: 'POST',
     headers: await gistHeaders(),
